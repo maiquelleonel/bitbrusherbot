@@ -46,6 +46,8 @@ class BotController extends Controller
 					$fbapi->make($text);
 					sleep(2);
 				}
-	}
 		}
+
+		return response()->json(['status' => 'success']);
+	}
 }
