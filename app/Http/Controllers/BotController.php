@@ -41,7 +41,7 @@ class BotController extends Controller
 		];
 		switch($postback['payload']){
 			case 'inicio':
-				foreach($default_messages as $bot_message){
+				foreach($bot_messages as $bot_message){
 					$text = $mt->message($bot_message);
 					$fbapi->make($text);
 					sleep(2);
